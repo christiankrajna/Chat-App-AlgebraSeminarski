@@ -8,7 +8,7 @@ export default function ChatMain({ userName, userColor, setIsLogged }) {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const droneRef = useRef(null);
-  const inputRef = useRef(null);
+
 
 
   useEffect(() => {
@@ -46,7 +46,6 @@ export default function ChatMain({ userName, userColor, setIsLogged }) {
       message: { userName, userColor, message }
     });
     
-    inputRef.current.focus();
     e.target.reset();
     setMessage("");
 
@@ -63,7 +62,7 @@ export default function ChatMain({ userName, userColor, setIsLogged }) {
     <div className="chat-main-wrapper">
       <Header userName={userName} userColor={userColor} />
       <Messages messages={messages} userName={userName} userColor={userColor} />
-      <Input userName={userName} handleSendMessage={handleSendMessage} handleInputChange={handleInputChange} handleLogout={handleLogout} setIsLogged={setIsLogged} inputRef={inputRef} />
+      <Input userName={userName} handleSendMessage={handleSendMessage} handleInputChange={handleInputChange} handleLogout={handleLogout} setIsLogged={setIsLogged}  />
     </div>
   );
 };

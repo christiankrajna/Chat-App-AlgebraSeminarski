@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect,useRef } from "react";
 
-export default function Input({ message, handleSendMessage, handleInputChange, handleLogout, inputRef }) {
+export default function Input({ message, handleSendMessage, handleInputChange, handleLogout }) {
+
+  const inputRef = useRef(null);
+  
+    useEffect(() =>{
+      inputRef.current.focus();
+    }, [inputRef])
 
   return (
     <div>
