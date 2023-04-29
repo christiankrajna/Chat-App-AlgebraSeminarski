@@ -45,10 +45,11 @@ export default function ChatMain({ userName, userColor, setIsLogged }) {
       room: "observable-room",
       message: { userName, userColor, message }
     });
-
+    
+    inputRef.current.focus();
     e.target.reset();
     setMessage("");
-    inputRef.current.focus();
+
   };
 
 

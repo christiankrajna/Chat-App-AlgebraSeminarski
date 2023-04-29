@@ -11,7 +11,6 @@ export default function Input({ message, handleSendMessage, handleInputChange, h
           placeholder="Enter your message ..."
           value={message === "" ? "" : message}
           onChange={handleInputChange}
-          autoFocus={true}
           ref={inputRef} />
 
         <button type="submit" className="send-btn" >Send</button>
