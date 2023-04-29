@@ -1,0 +1,30 @@
+.chat-main-wrapper {
+
+  max-width: 800px;
+  max-height: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+
+  background: linear-gradient(rgba(255, 255, 255, 0.39), rgba(255, 255, 255, 0.541)),url('../../public/image/thisboard.JPG') no-repeat center;
+  background-size:cover; 
+
+}
+
+
+@media (max-width: 768px) {
+
+  .chat-main-wrapper {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+}

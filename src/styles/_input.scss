@@ -1,0 +1,63 @@
+.input-form-wrapper {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 0;
+
+    input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+}
+
+
+.send-btn {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #099910;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #055c09;
+    }
+
+}
+
+
+.logout-btn {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    background-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: #004c9e;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .send-btn {
+        padding: 5px 10px;
+        margin-left: 5px;
+        font-size: 0.8em;
+
+    }
+
+    .logout-btn {
+        font-size: 0.8em;
+        margin: 0.4rem 0;
+    }
+}
