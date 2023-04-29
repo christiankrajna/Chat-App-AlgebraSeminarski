@@ -1,12 +1,6 @@
-import React, { useEffect,useRef } from "react";
+import React from "react";
 
-export default function Input({ message, handleSendMessage, handleInputChange, handleLogout }) {
-
-  const inputRef = useRef(null);
-  
-    useEffect(() =>{
-      inputRef.current.focus();
-    }, [inputRef])
+export default function Input({ message, handleSendMessage, handleInputChange, handleLogout,  }) {
 
   return (
     <div>
@@ -17,7 +11,8 @@ export default function Input({ message, handleSendMessage, handleInputChange, h
           placeholder="Enter your message ..."
           value={message === "" ? "" : message}
           onChange={handleInputChange}
-          ref={inputRef} />
+          autoFocus={true}
+         />
 
         <button type="submit" className="send-btn" >Send</button>
       </form>

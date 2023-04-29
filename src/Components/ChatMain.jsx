@@ -10,7 +10,6 @@ export default function ChatMain({ userName, userColor, setIsLogged }) {
   const droneRef = useRef(null);
 
 
-
   useEffect(() => {
     const drone = new window.Scaledrone("0ZLFUg99FpY3wVN5");
     drone.on("open", (error) => {
